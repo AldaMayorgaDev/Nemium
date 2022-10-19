@@ -5,6 +5,7 @@
     --gray30: #212121;
     --gray20: #212429;
     --gray10: #616161;
+    --yellow30: #FEC62E;
 
     /* --charter : charter; */
 }
@@ -48,3 +49,12 @@ p{
     font-size: 1rem;
 }
 
+pre{
+    background-color: var(--yellow30)
+}
+
+.hero{
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/patron-1.svg');
+}
