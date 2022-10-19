@@ -6,12 +6,13 @@
     --gray20: #212429;
     --gray10: #616161;
 
-    --charter : charter;
+    /* --charter : charter; */
 }
 
 body {
     color:var(--gray30);
-    font-family: var(--charter);
+    /* font-family: var(--charter); */
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
