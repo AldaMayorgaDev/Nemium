@@ -1,0 +1,49 @@
+@import url(./fonts.css);
+
+:root{
+    font-size: 16px;
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+
+    --charter : charter;
+}
+
+body {
+    color:var(--gray30);
+    font-family: var(--charter);
+}
+
+header{
+    color: var(--gray10);
+    font-size: 14px;
+}
+
+header a{
+    color: var(--gray10);
+    text-decoration: none;
+}
+header a:hover{
+    color: var(--gray30);
+}
+
+nav details summary{
+    font-weight: bold;
+}
+
+h1{
+   font-size: 3.75rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
