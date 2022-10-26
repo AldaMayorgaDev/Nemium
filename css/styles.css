@@ -58,3 +58,24 @@ pre{
     height: 350px;
     background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/patron-1.svg');
 }
+
+/* counter para agregar contador 1.tema */
+
+.section-content{
+    counter-reset: titleList;
+}
+
+.section-content h3 {
+    counter-increment: titleList;
+}
+.section-content h3::before{
+    content: counter(titleList, decimal)". ";
+}
+
+.section-content h3::after{
+    content: '';
+    width: 32px;
+    height: 4px;
+    background-color: var(--gray30);
+    display: inline-block;
+}

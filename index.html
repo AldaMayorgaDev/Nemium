@@ -63,17 +63,19 @@
             </details>
     </nav>
     </header>
-    <h1>Curso esencial de HTML y CSS</h1>
+    <main>
+       <h1>Curso esencial de HTML y CSS</h1>
     <p>
       Este es el inicio de tu carrera como Desarrollador Web, empezarás
       aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2
       aprenderás de componentes y en 3 sobre layouts.
     </p>
     <hr />
-    <h2>Setup</h2>
-    <ol>
+
+    <section class="section-content">
+      <h2>Setup</h2>
       <h3 id ="google-chrome">
-        <li>Google Chrome</li>
+        Google Chrome
       </h3>
       <img
         src="/images/Google Chrome.png"
@@ -85,8 +87,8 @@
         soporte de nuevos estándares y herramientas de desarrollo avanzadas y de
         amigable uso.
       </p>
-      <h3>
-        <li id="visual-studio-code">Visual Studio Code</li>
+      <h3 id="visual-studio-code">
+        Visual Studio Code
       </h3>
       <img
         src="/images/Visual Studio Code.png"
@@ -99,8 +101,8 @@
         de plugins lo hace el complemento perfecto para cualquier programador
         sin importar el lenguaje en el que se desemvuelva.
       </p>
-      <h3>
-        <li id="figma">Figma</li>
+      <h3 id = "figma">
+       Figma
       </h3>
       <img src="/images/Figma.png" alt="Logo Figma" title="Logo Figma" />
       <p>
@@ -108,8 +110,8 @@
         diseños a los desarrolladores para su implementación por su fácil uso
         porque puede ser usado directamente desde el navegador.
       </p>
-      <h3>
-        <li id="github">GitHub</li>
+      <h3 id="github">
+       GitHub
       </h3>
       <img src="/images/GitHub.png" alt="Logo GitHub" title="Logo GitHub" />
       <p>
@@ -119,12 +121,13 @@
         source” o guardarlo de manera privada, Github será esencial para
         almacenar tu futuro portafolio.
       </p>
-    </ol>
 
-    <h2>Conceptos esenciales del Desarrollo Web.</h2>
-    <ol>
-      <h3>
-        <li id="html">¿Qué es HTML?</li>
+    </section>
+   
+    <section class="section-content">
+      <h2>Conceptos esenciales del Desarrollo Web.</h2>
+      <h3 id="html">
+        ¿Qué es HTML?
       </h3>
       <p>
         Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el
@@ -146,9 +149,7 @@
         &lt;/html&gt;
      </pre>
       <h3 id="etiquetas">
-        <li>
             Etiquetas
-        </li>
       </h3>
       <p>
         Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.
@@ -158,73 +159,70 @@
       </p>
 
       <h3 id="dom">
-        <li>
             DOM
-        </li>
       </h3>
       <p>
         El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.
       </p>
       <img src="/images/dom.svg" alt="DOM" title="Document Object Model" />
       <h3 id="semantica">
-        <li>
             Semántica
-        </li>
       </h3>
       <p>
         La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.
       </p>
       <h3 id="atributos">
-        <li>
             Atributos
-        </li>
       </h3>
       <p>
         Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src
       </p>
       <h3 id="css">
-        <li>
             CSS
-        </li>
       </h3>
       <p>
         Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML
       </p>
       <img src="images/image 5.png" alt="CSS" title="CSS"/>
+    </section>
+    
       
-    </ol>
     <hr/>
-    <h2>Modelo de caja</h2>
-    <h3 id="modelo-de-caja">El modelo de caja está compuesto por:</h3>
-    <p>
-      Chrome va a ser el navegador que utilizaremos en el curso por su extenso
-      soporte de nuevos estándares y herramientas de desarrollo avanzadas y de
-      amigable uso.
-    </p>
-    <ol>
-        <li>Tamaño del contenido / Ancho y alto </li>
-        <li>Padding / Relleno </li>
-        <li>Border / Bordes </li>
-        <li>Margin / Márgenes </li>
-    </ol>
-    <h3 id="propiedades-fisicas-modelo-caja">
-        Propiedades físicas para el modelo de caja:
-    </h3>
-    <ul>
-        <li>width / height</li>
-        <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
-        <li>border / border-top | border-right | border-bottom | border-left</li>
-        <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
-    </ul>
-    <h3 id="propiedades-logicas-modelo-caja">
-        Propiedades lógicas para el modelo de caja:
-    </h3>
-    <ul>
-        <li>inline-size / block-size</li>
-        <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
-        <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
-        <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
-    </ul>
+
+    <section class="section-content">
+      <h2>Modelo de caja</h2>
+      <h3 id="modelo-de-caja">El modelo de caja está compuesto por:</h3>
+      <p>
+        Chrome va a ser el navegador que utilizaremos en el curso por su extenso
+        soporte de nuevos estándares y herramientas de desarrollo avanzadas y de
+        amigable uso.
+      </p>
+      <ol>
+          <li>Tamaño del contenido / Ancho y alto </li>
+          <li>Padding / Relleno </li>
+          <li>Border / Bordes </li>
+          <li>Margin / Márgenes </li>
+      </ol>
+      <h3 id="propiedades-fisicas-modelo-caja">
+          Propiedades físicas para el modelo de caja:
+      </h3>
+      <ul>
+          <li>width / height</li>
+          <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
+          <li>border / border-top | border-right | border-bottom | border-left</li>
+          <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
+      </ul>
+      <h3 id="propiedades-logicas-modelo-caja">
+          Propiedades lógicas para el modelo de caja:
+      </h3>
+      <ul>
+          <li>inline-size / block-size</li>
+          <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
+          <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
+          <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
+      </ul>
+    </section>
+    
     <h3>
         Slide tecnologías
     </h3>
@@ -239,6 +237,8 @@
         <input type="email" placeholder="Correo Electrónico" name="email pattern=".+@globex\.com">
         <input type="button" value="Suscribirme">
     </form>
+    </main>
+   
     <footer>
         <p>
             @ Aldahir Mayorga 2022
