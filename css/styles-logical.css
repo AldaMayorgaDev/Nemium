@@ -2,39 +2,48 @@
 
 :root{
     font-size: 16px;
-    --gray30: #212121;
-    --gray20: #212429;
-    --gray10: #616161;
-    --yellow30: #FEC62E;
+    --white30: white;
+    --white20: #a5a3a5;
+    --white10: #616161;
+    --gray30: #3A3539;
 
     /* --charter : charter; */
 }
 
 body {
-    color:var(--gray30);
+    color:var(--white30);
     /* font-family: var(--charter); */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    background-color: #251f24;
 }
 
 header{
-    color: var(--gray10);
+    color: var(--white30);
     font-size: 14px;
 }
 
 header a{
-    color: var(--gray10);
+    color: var(--white20);
     text-decoration: none;
 }
+
+header li{
+    color: var(--white20);
+}
 header a:hover{
-    color: var(--gray30);
+    color: var(--white30);
 }
 
 nav details summary{
     font-weight: bold;
 }
-
+ h1, h2, h3{
+    font-weight: normal;
+ }
 h1{
    font-size: 3.75rem;
+   
 }
 
 h2{
@@ -47,16 +56,18 @@ h3{
 
 p{
     font-size: 1rem;
+    color: var(--white20);
 }
 
 pre{
-    background-color: var(--yellow30)
+    background-color: var(--gray30)
 }
 
 .hero{
     width: 100%;
     height: 350px;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/patron-1.svg');
+/*     background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/patron-1.svg'); */
+    background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
 }
 
 /* counter para agregar contador 1.tema */
@@ -76,6 +87,6 @@ pre{
     content: '';
     width: 32px;
     height: 4px;
-    background-color: var(--gray30);
+    background-color: var(--white30);
     display: inline-block;
 }
