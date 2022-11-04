@@ -73,7 +73,16 @@ p{
     font-size: 1rem;
     color: var(--white20);
 }
+p a{
+    font-size: 1rem;
+    color: var(--white20);
+    text-decoration: none;
+}
 
+p a:active{
+    font-size: 1rem;
+    color: var(--white10);
+}
 pre{
     background-color: var(--gray30);
     padding:  40px;
@@ -257,4 +266,8 @@ section + hr {
         font-size: 3.75rem;
         margin-block-start: 64px;
     }
+}
+
+footer p{
+    text-align: center;
 }
