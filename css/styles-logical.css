@@ -21,13 +21,8 @@ body {
 
 header{
     color: var(--white30);
-    font-size: 14px;
-    position: absolute;
-    /* top */
-    inset-block-start: 0px;
-    inset-inline-start: -208px;
-    inline-size: 188px;
-
+    font-size: 14px;/* 
+    margin-block-start: 24px; */
 }
 
 header a{
@@ -52,8 +47,8 @@ nav details summary{
 } */
 
 h1{
-   font-size: 3.75rem;
-   margin-block-start: 64px;
+   font-size: 2.5rem;
+   margin-block-start: 24px;
    margin-block-end: 16px;
    
 }
@@ -107,7 +102,7 @@ blockquote p{
 }
 .hero{
     width: 100%;
-    height: 350px;
+    block-size: 50px;
 /*     background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/patron-1.svg'); */
     background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
 }
@@ -157,13 +152,10 @@ section + hr {
 }
 
 .header{
-    position: sticky;
-    inset-block-start:  -45px;
 }
 
 .header-content{
-    position: relative;
-    inset-block-start:  65px;
+    padding-inline: 20px;
 }
 
 /* slider con css */
@@ -236,4 +228,33 @@ section + hr {
 .form input[type="submit"]:hover{
     cursor: pointer;
     font-size: 18px;
+}
+
+/* Media Queries */
+
+/* min-width : medida -> de esa medida hacia arriba se aplicaran esos estilos (Minimo 700px)*/
+@media screen and (min-width: 1366px) {
+    header{
+        position: absolute;
+        inset-block-start: 0px;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+    .header{
+        position: sticky;
+        inset-block-start:  -45px;
+    }
+    
+    .header-content{
+        position: relative;
+        inset-block-start:  65px;
+        padding-inline: 0px;
+    }
+    .hero{
+        block-size: 350px;
+    }
+    h1{
+        font-size: 3.75rem;
+        margin-block-start: 64px;
+    }
 }
